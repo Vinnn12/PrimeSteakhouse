@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title> Prime Steakhouse & Bar - Restaurant </title>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</head>
+
+<body style="background-color: #f7f7f78a;">
+
+    <header class="Home">
+
+        <nav class="Sticky">
+
+            <div class="Row">
+
+                <img src="Images/Logo.png" alt="Logo" class="Logo">
+
+                <ul class="Main-Nav">
+
+                    <li><a href="Index.html"> HOME </a></li>
+                    <li><a href="About.html"> ABOUT US </a></li>
+                    <li><a href="Menu.html"> MENU </a></li>
+                    <li><a href="Reservation.html"> RESERVATION</a></li>
+                    <li><a href="Contact.html"> CONTACT US </a></li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <div class="Text-Box">
+
+            <h2> Welcome to </h2>
+            <h1 style="color: white; font-size: 240%;"> Prime Steakhouse & Bar </h1>
+            <a class="Btn Btn-1" href="#Event"> Upcoming Event </a>
+            <a class="Btn Btn-2" href="About.html"> About Us </a>
+
+        </div>
+
+    </header>
+
+    <section class="Features">
+
+        <div class="Row">
+
+            <p class="Paragraph">
+
+                Hi there, during this COVID-19 pandemic Prime Steakhouse & Bar will be ready to serve you for both dine
+                in and takeaway. We have prepared the best premium food delivery service for our lovely guests.
+
+            </p>
+
+        </div>
+
+        <div class="Row" style="height : 230px;">
+
+            <div class="Col">
+
+                <i class="fas fa-clock"></i> <br>
+
+                <h3> Delivery Time </h3> <br>
+
+                <p class="Main">
+
+                    20 to 40 minutes from our kitchen to your doorstep
+
+                </p>
+
+            </div>
+
+            <div class="Col span-1-of-4">
+
+                <i class="fas fa-carrot"></i> <br>
+
+                <h3> Ingredients </h3> <br>
+
+                <p class="Main">
+
+                    Using only 100% fresh organic Ingredients
+
+                </p>
+
+            </div>
+
+            <div class="Col span-1-of-4">
+
+                <i class="fas fa-archive"></i> <br>
+
+                <h3> Delivery goods </h3> <br>
+
+                <p class="Main">
+
+                    Using high quality box to pack your goods
+
+                </p>
+
+            </div>
+
+            <div class="Col span-1-of-4">
+
+                <i class="fas fa-balance-scale"></i> <br>
+
+                <h3> Quantity </h3> <br>
+
+                <p class="Main">
+
+                    The right portion quantity to satisfy you every time
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="MealsSection" id="Event">
+
+        <div class="Row">
+
+            <div class="MenuTitle">
+
+                <h2 class="MenuTitle"> Upcoming event </h2>
+
+            </div>
+
+            <div>
+
+                <ul class="Meals">
+
+                    <li>
+                        <figure class="IndexFig">
+                            <div class="Tiny">
+                                <img src="Images/Xmas.jpg">
+                                <figcaption>
+                                    <pre> Christmast Dinner 24Dec</pre>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="IndexFig">
+                            <div class="Tiny">
+                                <img src="Images/New.jpg">
+                                <figcaption>
+                                    <pre> New Years Dinner 31Dec </pre>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="IndexFig">
+                            <div class="Tiny">
+                                <img src="Images/Val.jpg">
+                                <figcaption>
+                                    <pre> Romantic Valentine Dinner 14Feb </pre>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="Audio">
+
+                <audio controls>
+
+                    <source src="Images/NewYear.mp3">
+
+                </audio>
+
+            </div>
+
+            <div class="Audio2">
+
+                <audio controls>
+
+                    <source src="Images/NewYear.mp3">
+
+                </audio>
+
+            </div>
+
+            <div class="Audio3">
+
+                <audio controls>
+
+                    <source src="Images/Valentine.flac">
+
+                </audio>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="MealsSection" id="Event">
+
+        <div class="Row">
+
+            <div class="MenuTitle">
+
+                <h2 class="MenuTitle"> Upcoming event </h2>
+
+            </div>
+
+            <div>
+
+                <ul class="Meals">
+
+                    <li>
+                        <figure class="IndexFig">
+                            <div class="Tiny">
+                                <img src="Images/Xmas.jpg">
+                                <figcaption>
+                                    <pre> Christmast Dinner 24Dec</pre>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="IndexFig">
+                            <div class="Tiny">
+                                <img src="Images/New.jpg">
+                                <figcaption>
+                                    <pre> New Years Dinner 31Dec </pre>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="IndexFig">
+                            <div class="Tiny">
+                                <img src="Images/Val.jpg">
+                                <figcaption>
+                                    <pre> Romantic Valentine Dinner 14Feb </pre>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="Audio">
+
+                <audio controls>
+
+                    <source src="Images/NewYear.mp3">
+
+                </audio>
+
+            </div>
+
+            <div class="Audio2">
+
+                <audio controls>
+
+                    <source src="Images/NewYear.mp3">
+
+                </audio>
+
+            </div>
+
+            <div class="Audio3">
+
+                <audio controls>
+
+                    <source src="Images/Valentine.flac">
+
+                </audio>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="Footer" style="height: 200px; background-color: #845039; opacity: 0.5; margin-top: 3%;">
+
+            <div class="Row">
+
+                <div class="Footer-Box">
+
+                    <div class="FooterWord">
+
+                        <h4 style="font-weight: 500; padding-left : 10%;"> Opening hours : </h4>
+
+                        <pre>                                                       </pre>
+                        <pre style="color: white; padding-left : 10%"> Mon - Fri    : 09.00 - 22.00 </pre>
+                        <pre style="color: white; padding-left : 10%"> Sat - Sun    : 09.00 - 24.00 </pre>
+
+                    </div>
+
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+                    <div class="Icon">
+
+                        <ul style="list-style: none; display: inline-flex; padding-left : 20px; letter-spacing: 50px;">
+
+                            <li><a href="https://instagram.com/primesteakhouseandbar"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://facebook.com/primesteakhousejwmedan"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="BottomLine"> </div>
+
+                <div class="BottomWord">
+
+                    <p style="color: white; text-align: center; font-weight: 400; margin-top: 1%;"> Copyright &copy;
+                        Prime Steakhouse & Bar </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

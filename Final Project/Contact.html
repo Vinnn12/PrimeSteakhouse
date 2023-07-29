@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <title> Prime Steakhouse & Bar - Restaurant </title>
+
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <script>
+        function validateForm() 
+        {
+            var x = document.forms["myForm"]["fullname"].value;
+            if (x == "")
+            {
+                alert("Name must be filled out");
+                return false;
+            }
+      
+            var x = document.forms["myForm"]["email"].value;
+            if (x == "")
+            {
+                alert("Email must be filled out");
+                return false;
+            }
+
+            var x = document.forms["myForm"]["contact"].value;
+            if (x == "")
+            {
+                alert("Email must be filled out");
+                return false;
+            }
+        }
+        </script>
+    </head>
+
+    <body style="background-color: #f7f7f78a;">
+
+        <header class="Home">
+
+            <nav class="Sticky">
+
+                <div class="Row">
+
+                    <img src="Images/Logo.png" alt="Logo" class="Logo">
+
+                    <ul class="Main-Nav">
+                
+                        <li><a href="Index.html">       HOME       </a></li>
+                        <li><a href="About.html">       ABOUT US   </a></li>
+                        <li><a href="Menu.html">        MENU       </a></li>
+                        <li><a href="Reservation.html"> RESERVATION</a></li>
+                        <li><a href="Contact.html">     CONTACT US </a></li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <div class="Text-Box">
+
+                <h2> Welcome to </h2>
+                <h1 style="color: white; font-size: 240%;"> Prime Steakhouse & Bar </h1>
+                <a class="Btn Btn-1" href="#Maps"> Visit Us </a>
+                <a class="Btn Btn-2" href="Menu.html"> Our Menu </a> 
+
+            </div>
+
+        </header>
+
+        <section  id="Maps">
+
+            <div class="Contact-Container"> 
+                
+                <div class="Contain3">
+                <div class="Row">
+
+                    <div class="Maps"> 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.965002991662!2d98.67313021475857!3d3.595496797383576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131c3e9350ea3%3A0x41fbba53c016efb0!2sPrime%20Steakhouse!5e0!3m2!1sen!2sid!4v1607063288359!5m2!1sen!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+
+                </div>
+                </div>
+
+                <div class="Contain2">
+
+                <div class="Row" style="background-color: #845039; opacity: 0.5; color: white;">
+
+                    <div class="Contact-Header">
+
+                        <h2 style="text-align: center;"> Contact Us </h2>
+
+                    </div>
+
+                    <div class="Contain">
+
+                        <form action="_blank">
+
+                        <label> Name  : &nbsp; </label>   
+                        <input type="text" name="Name" placeholder="Enter your Name" id="fullname" size="30">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label> Email Address : &nbsp; </label>  
+                        <input type="email" name="" placeholder="Enter your E-mail" id="email" size="30">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label> Contact Number : &nbsp; </label>  
+                        <input type="text" name="" placeholder="Enter your Contact Number" id="contact" size="25"> 
+                        <br><br>
+                        <textarea name="Message" style="width: 1081px; height: 100px;">  Enter your Message </textarea>
+                        <br><br>
+                        <input type="submit" class="Submit">
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </section>
+
+        <section>
+
+            <div class="ContactBox">
+
+                <div class="Row" style="background-color: #845039; opacity: 0.5; color: white;">
+
+                    <div class="ContainContact">
+
+                        <div class="ContHead">
+
+                            <h3> For Upcoming Event : </h3> 
+
+                        </div>
+
+                        <div class="Table">
+
+                        <table>
+
+                            <tr>
+
+                                <td rowspan="2"> Event </td>
+                                <td rowspan="2"> Date </td>
+                                <td rowspan="2"> Time </td>
+                                <td colspan="3"> Price  </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td> Children </td>
+                                <td> Adult  </td> 
+                                <td> Couple </td>
+
+                            </tr>
+
+                            <tr> 
+
+                                <td> Chistmast Dinner   </td>
+                                <td> 14 Nov 2020        </td>
+                                <td> 19.00 - 22.00      </td>
+                                <td> $32                </td>
+                                <td> $50                </td>
+                                <td> -                  </td>
+
+                            </tr>
+
+                            <tr> 
+
+                                <td> New Year Dinner    </td>
+                                <td> 31 Dec 2020        </td>
+                                <td> 19.00 - 22.00      </td>
+                                <td> $40                </td>
+                                <td> $52                </td>
+                                <td> -                  </td>
+
+                            </tr>
+
+                            <tr> 
+
+                                <td> Valentine Dinner   </td>
+                                <td> 14 Nov 2020        </td>
+                                <td> 19.00 - 22.00      </td>
+                                <td> -                  </td>
+                                <td> -                  </td>
+                                <td> $120               </td>
+
+                            </tr>
+
+                        </table>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="ContactBox2">
+
+                <div class="Row" style="background-color: #845039; opacity: 0.5; color: white;">
+
+                    <div class="ContainContact">
+
+                        <p> You are warmly welcome to feel free to contact us on any enquiries & don't hesitate to provide any suggests. </p>
+
+                        <div class="ContactIcon">
+
+                        <i class="fas fa-phone"></i>
+
+                        </div>
+
+                        <div class="IconText">
+
+                            Phone   : +62 61 – 455 3333 <br>
+                            Fax     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: +62 61 – 452 3333
+
+                        </div>
+
+                        <div class="ContactIcon">
+
+                            <i class="fas fa-envelope-square"></i>
+    
+                            </div>
+    
+                            <div class="IconText2">
+    
+                                Email : jwmedandining.com
+    
+                            </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            <div class="Footer" style="height: 200px; background-color: #845039; opacity: 0.5; margin-top: 720px;" >
+
+                <div class="Row">
+
+                    <div class="Footer-Box">
+
+                    <div class="FooterWord">
+
+                        <h4 style="font-weight: 500; padding-left : 10%;"> Opening hours : </h4>
+
+                        <pre>                                                       </pre>
+                        <pre style="color: white; padding-left : 10%"> Mon - Fri    : 09.00 - 22.00 </pre>
+                        <pre style="color: white; padding-left : 10%"> Sat - Sun    : 09.00 - 24.00 </pre> 
+
+                    </div>
+
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+                    <div class="Icon">
+
+                        <ul style="list-style: none; display: inline-flex; padding-left : 20px; letter-spacing: 50px;">
+
+                            <li><a href="https://instagram.com/primesteakhouseandbar"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://facebook.com/primesteakhousejwmedan"><i class="fab fa-facebook-f"></i></a></li>
+
+                        </ul>
+
+                    </div>
+
+                    </div>
+
+                    <div class="BottomLine"> </div>
+
+                    <div class="BottomWord">
+
+                        <p style="color: white; text-align: center; font-weight: 400; margin-top: 1%;"> Copyright &copy; Prime Steakhouse & Bar </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+    
+    </body>
+
+</html>

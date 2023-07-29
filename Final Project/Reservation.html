@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <title> Prime Steakhouse & Bar - Reservation form </title>
+
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <script type="text/javascript">
+
+            function validateForm() 
+            {
+                var x = document.forms["myForm"]["fullname"].value;
+                if (x == "")
+                {
+                    alert("Name must be filled out");
+                    return false;
+                }
+            
+                var x = document.forms["myForm"]["email"].value;
+                if (x == "")
+                {
+                    alert("Email must be filled out");
+                    return false;
+                }
+
+                var x = document.forms["myForm"]["contact"].value;
+                if (x == "")
+                {
+                    alert("Contact Number must be filled out");
+                    return false;
+                }
+
+                var x = document.forms["myForm"]["date"].value;
+                if (x == "")
+                {
+                    alert("Date must be filled out");
+                    return false;
+                }
+            
+                var x = document.forms["myForm"]["time"].value;
+                if (x == "")
+                {
+                    alert("Time must be filled out");
+                    return false;
+                }
+
+                var x = document.forms["myForm"]["no"].value;
+                if (x == "")
+                {
+                    alert("No of person must be filled out");
+                    return false;
+                }
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <header class="Reservation">
+
+            <nav>
+
+                <div class="Row">
+
+                    <img src="Images/Logo.png" alt="Logo" class="Logo">
+
+                    <ul class="Main-Nav">
+            
+                        <li><a href="Index.html">           HOME        </a></li>
+                        <li><a href="About.html">           ABOUT US    </a></li>
+                        <li><a href="Menu.html">            MENU        </a></li>
+                        <li><a href="Reservation.html">     RESERVATION </a></li>
+                        <li><a href="Contact.html">         CONTACT US  </a></li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <div class="Text-Box">
+
+                <h2 style="color: white; text-align: left;"> Welcome to </h2>
+                <h1 style="color: white; font-size: 240%;"> Prime Steakhouse & Bar </h1>
+                <a class="Btn Btn-1" href="#Reservation"> Dine-in  </a>
+                <a class="Btn Btn-2" href="Order.html"> Takeaway </a> 
+
+            </div>
+
+        </header> 
+
+        <section id="Reservation">
+
+            <div class="Reserv-Container">
+
+                <div class="Row"> 
+
+                    <div class="Reserv-Container2">
+
+                        <div class="Reserv-Header">
+
+                            <h2> Reservation Form </h2>
+
+                        </div>
+
+                        <div class="Order">
+
+                                <form action="_blank" name="myForm" onsubmit="return validateForm()" method="post">
+
+                                <label> 
+                                    Name 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+                                </label>
+                                &nbsp;&nbsp;
+                                <input type="text" placeholder="Enter your name" id="fullname" size="120" class="ReservInput"><br><br>
+
+                                <label> Email Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </label>
+                                &nbsp;&nbsp;
+                                <input type="email" placeholder="Enter your E-mail" id="email" size="120" class="ReservInput"><br><br>
+
+                                <label> Contact Number &nbsp;&nbsp; : </label>
+                                &nbsp;&nbsp;
+                                <input type="text" placeholder="Enter your Contact Number" id="contact" size="120" class="ReservInput"><br><br>
+
+                                <label> Reservation Date &nbsp; : </label>
+                                &nbsp;&nbsp;
+                                <input type="date" class="ReservInput" id="date" style="width: 73.8%;"><br><br>
+
+                                <label> Reservation Time &nbsp; : </label>
+                                &nbsp;&nbsp;
+                                <input type="time" class="ReservInput" id="time" style="width: 73.8%;"><br><br>
+
+                                <label> No. of person &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </label>
+                                &nbsp;&nbsp;
+                                <input type="number" placeholder="0" id="no" class="ReservInput" min="0" max="15" style="width: 73.8%;"><br><br>
+
+                                <input type="submit" value="Book a Table" style="padding : 1% 2%; margin-left: 41%;"> 
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </section>     
+        
+        <section>
+
+            <div class="DineInBox">
+
+                <div class="Row">
+
+                    <div class="DineInWrap1">
+
+                        <div class="DineInRow1">
+
+                            <div class="DineInBox1">
+
+                                <div class="DineInHeader">
+
+                                    <h2> Starter </h2>
+
+                                </div>
+
+                                <div class="DineInSubHeader">
+
+                                    <form>
+
+                                        <input type="number" name="quantity" min="0" max="99" value="0" style="height: 25px;"> 
+                                        &nbsp;&nbsp;
+                                            <label  style="font-size: 90%;"> Fried Crispy Prawn &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $20 </label> 
+                                    
+                                        <br><br>
+        
+                                        <input type="number" name="quantity" min="0" max="99" value="0" style="height: 25px;">
+                                        &nbsp;&nbsp;
+                                            <label style="font-size: 80%;"> Wagyu Omi Hime Beef Tacos &nbsp; $36 </label> 
+        
+                                        <br><br>
+        
+                                        <input type="number" name="quantity" min="0" max="99" value="0" style="height: 25px;">
+                                        &nbsp;&nbsp;
+                                            <label  style="font-size: 90%;"> Pan Fried Foie Gras &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $35 </label> 
+                                    
+                                        <br><br>
+                                
+                                    </form>
+
+                                </div>
+
+                            </div>
+
+                            <div class="Line1"> aaaaaaaa </div>
+
+                            <div class="DineInBox1">
+
+                                <div class="DineInHeader2">
+    
+                                    <h2> Soup </h2>
+    
+                                </div>
+    
+                                <div class="DineInSubHeader">
+    
+                                    <form>
+    
+                                        <input type="number" name="quantity" min="0" max="99" value="0" style="height: 25px;"> 
+                                        &nbsp;&nbsp;
+                                        <label style="font-size: 90%;"> Roasted Tomato Soup &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $13 </label> 
+                                        
+                                        <br><br>
+            
+                                        <input type="number" name="quantity" min="0" max="99" value="0" style="height: 25px;">
+                                        &nbsp;&nbsp;
+                                            <label style="font-size: 90%;"> Wild Mushroom Soup &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $14 </label> 
+            
+                                        <br><br>
+            
+                                        <input type="number" name="quantity" min="0" max="99" value="0" style="height: 25px;">
+                                        &nbsp;&nbsp;
+                                            <label style="font-size: 75%;"> Creamy Lobster Bisque Soup &nbsp;&nbsp;&nbsp;&nbsp; $16 </label> 
+                                        
+                                        <br><br>
+                                    
+                                    </form>
+    
+                                </div>
+    
+                            </div>
+
+                            <div class="Line1"> aaaaaaaa </div>
+
+                            <div class="DineInBox1">
+
+                                <div class="DineInHeader3">
+    
+                                    <h2> Salad </h2>
+    
+                                </div>
+    
+                                <div class="DineInSubHeader">
+    
+                                    <form>
+    
+                                        <input type="number" name="quantity" min="0" max="99" value="0" style="height: 25px;"> 
+                                        &nbsp;&nbsp;
+                                        <label style="font-size: 90%;"> Pink Crusted Tuna Salad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $17 </label> 
+                                        
+                                        <br><br>
+            
+                                        <input type="number" name="quantity" min="0" max="99" value="0" style="height: 25px;">
+                                        &nbsp;&nbsp;
+                                            <label style="font-size: 90%;"> Prime Prawn Salad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $17</label> 
+            
+                                        <br><br>
+            
+                                        <input type="number" name="quantity" min="0" max="99" value="0" style="height: 25px;">
+                                        &nbsp;&nbsp;
+                                            <label style="font-size: 90%;"> Classic Caesar Salad &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $17 </label> 
+                                        
+                                        <br><br>
+                                    
+                                    </form>
+    
+                                </div>
+    
+                            </div>
+
+                        </div>
+
+                    <div class="Row2">
+
+                        <div class="Line2"></div>
+                        
+                        <div class="DineInLogo">
+
+                            <img src="Images/Logo.png">
+
+                        </div>
+
+                        <div class="Line2"></div>
+
+                    </div>
+
+                    <div class="DineInRow1">
+
+                        <div class="DineInBox1">
+
+                            <div class="DineInHeader4">
+
+                                <h2> Seafood </h2>
+
+                            </div>
+
+                            <div class="DineInSubHeader">
+
+                                <form>
+
+                                    <input type="number" name="quantity" min="0" max="99" value="0" style="height: 25px;"> 
+                                    &nbsp;&nbsp;
+                                        <label  style="font-size: 90%;"> Lobster Thermidor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $78 </label> 
+                                
+                                    <br><br>
+    
+                                    <input type="number" name="quantity" min="0" max="99" value="0" style="height: 25px;">
+                                    &nbsp;&nbsp;
+                                        <label style="font-size: 90%;"> Grilled Salmon Trout &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $35 </label> 
+    
+                                    <br><br>
+    
+                                    <input type="number" name="quantity" min="0" max="99" value="0" style="height: 25px;">
+                                    &nbsp;&nbsp;
+                                        <label  style="font-size: 90%;"> Baked Black Cod Fish &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $35 </label> 
+                                
+                                    <br><br>
+                            
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                        <div class="Line1"> aaaaaaaa </div>
+
+                        <div class="DineInBox1">
+
+                            <div class="DineInHeader5">
+
+                                <h2> Poultry </h2>
+
+                            </div>
+
+                            <div class="DineInSubHeader">
+
+                                <form>
+
+                                    <input type="number" name="quantity" min="0" max="99" value="0" style="height: 25px;"> 
+                                    &nbsp;&nbsp;
+                                    <label style="font-size: 90%;"> Half Spring Chicken &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $21 </label> 
+                                
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                        <div class="Line1"> </div>
+
+                        <div class="DineInBox1">
+
+                            <div class="DineInHeader3">
+
+                                <h2> Lamb </h2>
+
+                            </div>
+
+                            <div class="DineInSubHeader">
+
+                                <form>
+
+                                    <input type="number" name="quantity" min="0" max="99" value="0" style="height: 25px;"> 
+                                    &nbsp;&nbsp;
+                                    <label style="font-size: 90%;"> Grilled Lamb Rack &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $38 </label> 
+                                    
+                                    <br><br>
+        
+                                    <input type="number" name="quantity" min="0" max="99" value="0" style="height: 25px;">
+                                    &nbsp;&nbsp;
+                                        <label style="font-size: 90%;"> Stewed Lamb Shank &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $35</label> 
+                                
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section>
+
+            <div class="DineInBoxPasta">
+
+                <div class="Row">
+
+                    <div class="DineInWrapPasta">
+
+                        <div class="DineInRow1">
+
+                            <div class="DineInBox1">
+
+                                <div class="DineInHeader4">
+
+                                    <h2> Tiger Prawn </h2>
+
+                                </div>
+
+                                <div class="DineInSubHeader">
+
+                                    <form>
+
+                                        <input type="number" name="quantity" min="0" max="10" value="0" style="height: 25px;"> 
+                                        &nbsp;&nbsp;
+                                            <label  style="font-size: 90%;"> Spaghetti &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $24 </label> 
+                                    
+                                        <br><br>
+        
+                                        <input type="number" name="quantity" min="0" max="10" value="0" style="height: 25px;">
+                                        &nbsp;&nbsp;
+                                            <label style="font-size: 90%;"> Angel Hair &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $24 </label> 
+        
+                                        <br><br>
+        
+                                        <input type="number" name="quantity" min="0" max="10" value="0" style="height: 25px;">
+                                        &nbsp;&nbsp;
+                                            <label  style="font-size: 90%;"> Carbonara &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $24 </label> 
+                                    
+                                        <br><br>
+                                
+                                    </form>
+
+                                </div>
+
+                            </div>
+
+                            <div class="Line1"> </div>
+
+                            <div class="DineInBox1">
+
+                                <div class="DineInHeader6">
+    
+                                    <h2> Aglio E Olio </h2>
+    
+                                </div>
+    
+                                <div class="DineInSubHeader">
+    
+                                    <form>
+
+                                        <input type="number" name="quantity" min="0" max="10" value="0" style="height: 25px;"> 
+                                        &nbsp;&nbsp;
+                                            <label  style="font-size: 90%;"> Spaghetti &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $24 </label> 
+                                    
+                                        <br><br>
+        
+                                        <input type="number" name="quantity" min="0" max="10" value="0" style="height: 25px;">
+                                        &nbsp;&nbsp;
+                                            <label style="font-size: 90%;"> Angel Hair &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $24 </label> 
+        
+                                        <br><br>
+        
+                                        <input type="number" name="quantity" min="0" max="10" value="0" style="height: 25px;">
+                                        &nbsp;&nbsp;
+                                            <label  style="font-size: 90%;"> Carbonara &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $24 </label> 
+                                    
+                                        <br><br>
+                                
+                                    </form>
+                                </div>
+    
+                            </div>
+
+                            <div class="Line1"> aaaaaaaa </div>
+
+                            <div class="DineInBox1">
+
+                                <div class="DineInHeader7">
+    
+                                    <h2> Carbonara </h2>
+    
+                                </div>
+    
+                                <div class="DineInSubHeader">
+    
+                                    <form>
+
+                                        <input type="number" name="quantity" min="0" max="10" value="0" style="height: 25px;"> 
+                                        &nbsp;&nbsp;
+                                            <label  style="font-size: 90%;"> Spaghetti &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  $22 </label> 
+                                    
+                                        <br><br>
+        
+                                        <input type="number" name="quantity" min="0" max="10" value="0" style="height: 25px;">
+                                        &nbsp;&nbsp;
+                                            <label style="font-size: 90%;"> Angel Hair &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $22 </label> 
+        
+                                        <br><br>
+        
+                                        <input type="number" name="quantity" min="0" max="10" value="0" style="height: 25px;">
+                                        &nbsp;&nbsp;
+                                            <label  style="font-size: 90%;"> Carbonara &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $22 </label> 
+                                    
+                                        <br><br>
+                                
+                                    </form>
+    
+                                </div>
+    
+                            </div>
+
+                        
+                        </div>
+                </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="DineInBox"  style="margin-top: 3%;">
+
+                <div class="Row">
+
+                    <div class="DineInWrap3">
+
+                        <div class="DineInRow5">
+
+                            <div class="DineInBox1">
+
+                                <div class="DineInHeaderBeef1">
+
+                                    <h2> Australian </h2>
+
+                                </div>
+
+                                <div class="DineInSubHeader">
+
+                                    <form>
+
+                                            <label  style="font-size: 90%;"> Wagyu Tenderloin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $70 / $96 </label> <br>
+                                            <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 220 gr
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 300 gr
+                                        
+                                        <br><br>
+                                        
+                                        <label  style="font-size: 90%;"> Wagyu Tenderloin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $67 / $91 </label> <br>
+                                        <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 220 gr
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 300 gr
+
+                                        <br><br>
+        
+                                        <label  style="font-size: 90%;"> Wagyu Tenderloin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $67 / $89 </label> <br>
+                                        <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 220 gr
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 300 gr
+                                    
+                                        <br><br>
+                                
+                                    </form>
+
+                                </div>
+
+                            </div>
+
+                            <div class="Line3"> aaaaaaaa </div>
+
+                            <div class="DineInBox1">
+
+                                <div class="DineInHeaderBeef2">
+    
+                                    <h2> United States </h2>
+    
+                                </div>
+    
+                                <div class="DineInSubHeader">
+    
+                                    <form>
+
+                                    <label  style="font-size: 90%;"> Prime Beef Tenderloin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$56 / $75 </label> <br>
+                                    <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 220 gr
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 300 gr
+                                    
+                                    <br><br>
+                                    
+                                    <label  style="font-size: 90%;"> Prime Beef Rib Eye &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $56 / $71 </label> <br>
+                                    <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 220 gr
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 300 gr
+
+                                    <br><br>
+    
+                                    <label  style="font-size: 90%;"> Prime Beef Striploin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $46 / $56 </label> <br>
+                                    <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 220 gr
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 300 gr
+                                
+                                    <br><br>
+                            
+                                </form>
+
+    
+                                </div>
+    
+                            </div>
+
+                            <div class="Line3"> aaaaaaaa </div>
+
+                            <div class="DineInBox1">
+
+                                <div class="DineInHeaderBeef3">
+    
+                                    <h2> Japanese </h2>
+    
+                                </div>
+    
+                                <div class="DineInSubHeader">
+    
+                                    <form>
+
+                                        <label  style="font-size: 72%;"> Grilled Wagyu Striploin Omi Hime A5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $130 / $150 </label> <br>
+                                        <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 150 gr
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 220 gr
+                                        
+                                        <br><br>
+                                        
+                                        <label  style="font-size: 90%;"> Wagyu Tenderloin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $110 / $ 125 </label> <br>
+                                        <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 150 gr
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="number" name="quantity" min="0" max="5" value="0" style="height: 25px;">&nbsp;&nbsp; 220 gr
+                                
+                                    </form>
+    
+                                </div>
+    
+                            </div>
+
+                        </div>
+
+                        <div class="SauceBox">
+
+                            <div class="SauceHeader">
+        
+                                <h3> Choice of Sauce </h3>
+                                <p class="TinyNote"> <i>NB</i> : Additional Sauce will be charged $2 </p>
+        
+                            </div>
+        
+                            <div class="Sauce">
+        
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" name="Sauce"> &nbsp;&nbsp; Mushroom  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" name="Sauce"> &nbsp;&nbsp; Blackpepper &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" name="Sauce"> &nbsp;&nbsp; Barbeque <br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" name="Sauce"> &nbsp;&nbsp; Red Wine &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" name="Sauce"> &nbsp;&nbsp; Hollandaise &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" name="Sauce"> &nbsp;&nbsp; Bearnaise
+        
+                            </div>
+        
+                        </div>
+
+                        <div class="SideDishesBox">
+
+                            <div class="SideDishesHeader">
+
+                                <h3> Side Dishes </h3>
+                                <p class="TinyNote"> <i>NB</i> : Additional Side dishes will be charged $2 </p>
+
+                            </div>
+
+                            <div class="SideDishes">
+        
+                                <input type="checkbox" name="Sauce"> &nbsp;&nbsp; Baked Potato  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" name="Sauce"> &nbsp;&nbsp; Potato Wedges &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" name="Sauce"> &nbsp;&nbsp; French Fries  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" name="Sauce"> &nbsp;&nbsp; Gratin Potato &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="checkbox" name="Sauce"> &nbsp;&nbsp; Mashed Potato &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+                            </div>
+
+                        </div>
+
+                        <form action="_blank">
+
+                        <input type="submit" style="margin-left: 41%; font-size: large; padding: 2% 4%; margin-top: 15%;">
+
+                        </form>
+
+                </div>
+
+                </div>
+
+                <footer>
+
+                    <div class="Footer" style="height: 200px; background-color: #845039; opacity: 0.5; margin-top: 3%;" >
+        
+                        <div class="Row">
+        
+                            <div class="Footer-Box">
+        
+                            <div class="FooterWord">
+        
+                                <h4 style="font-weight: 500; padding-left : 10%;"> Opening hours : </h4>
+        
+                                <pre>                                                       </pre>
+                                <pre style="color: white; padding-left : 10%"> Mon - Fri    : 09.00 - 22.00 </pre>
+                                <pre style="color: white; padding-left : 10%"> Sat - Sun    : 09.00 - 24.00 </pre> 
+        
+                            </div>
+
+                            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        
+                            <div class="Icon">
+        
+                                <ul style="list-style: none; display: inline-flex; padding-left : 20px; letter-spacing: 50px;">
+        
+                                    <li><a href="https://instagram.com/primesteakhouseandbar"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://facebook.com/primesteakhousejwmedan"><i class="fab fa-facebook-f"></i></a></li>
+        
+                                </ul>
+        
+                            </div>
+        
+                            </div>
+        
+                            <div class="BottomLine"> </div>
+        
+                            <div class="BottomWord">
+        
+                                <p style="color: white; text-align: center; font-weight: 400; margin-top: 1%;"> Copyright &copy; Prime Steakhouse & Bar </p>
+        
+                            </div>
+        
+                        </div>
+        
+                    </div>
+        
+                </footer>
+
+            </div>
+
+        </section>
+
+        
+
+    </body>
+
+</html>
