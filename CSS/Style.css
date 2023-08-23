@@ -1,0 +1,528 @@
+/*
+
+--------------------- 01 TYPOGRAPHY SYSTEM ---------------------
+
+- Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font Weights:
+Default: 400
+
+- Line Heights:
+Default: 1
+
+--------------------- 02 COLORS ---------------------
+
+- Primary: #e62228
+- Tints:
+- Shades:
+- Accents:
+- Greys: #555
+
+--------------------- 03 IMAGES ---------------------
+
+https://unsplash.com
+https://uifaces.com
+
+--------------------- 05 SHADOWS ---------------------
+
+--------------------- 06 BORDER-RADIUS ---------------------
+
+--------------------- 07 WHITESPACE ---------------------
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* ------------------------------------------- HEADER SECTION ------------------------------------------- */
+
+.header-section {
+  background-color: #ffe6e6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 130rem;
+}
+
+.logo-border {
+  max-width: 18rem;
+  max-height: 10rem;
+}
+
+.logo-border img {
+  max-width: 100%;
+}
+
+.nav-border ul {
+  display: flex;
+  column-gap: 6rem;
+}
+
+.nav-border ul li a {
+  color: #555;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 1rem;
+}
+
+.nav-border ul li a:hover {
+  border-bottom: 4px solid red;
+  color: red;
+  padding: 1rem;
+}
+
+.nav-border ul li a:active {
+  color: #ff9999;
+  border-bottom: 4px solid #ff9999;
+}
+
+/* ------------------------------------------- HEADER SECTION ------------------------------------------- */
+
+/* ------------------------------------------- HERO SECTION ------------------------------------------- */
+
+.hero-section {
+  background-color: #ffe6e6;
+  margin-bottom: 4.8rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 5.6rem 0;
+}
+
+.text-section .heading-primary {
+  font-size: 5rem;
+  line-height: 5.8rem;
+  font-weight: 800;
+}
+
+.heading-third {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  max-width: 58rem;
+  margin-top: 4rem;
+}
+
+.main-link-border {
+  margin-top: 5rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.image-section img {
+  width: 100%;
+}
+
+/* ------------------------------------------- HERO SECTION ------------------------------------------- */
+
+/* ------------------------------------------- JOB SECTION ------------------------------------------- */
+
+.job-section {
+  margin-bottom: 9.6rem;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.job-filter {
+  border: 2px solid #c0c0c0;
+  margin: 3rem 2rem 3rem 2rem;
+  border-radius: 15px;
+  color: black;
+  font-weight: 700;
+  max-height: 78rem;
+}
+
+.job-filter-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-bottom: 2px solid #c0c0c0;
+}
+
+.clear-button,
+.sort-button {
+  color: red;
+}
+
+.job-filter-date,
+.job-filter-type,
+.job-filter-working,
+.job-filter-salary {
+  margin: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #c0c0c0;
+}
+
+.job-filter-function {
+  margin: 1.5rem;
+}
+
+.job-filter-date select {
+  margin-top: 0.8rem;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.2rem;
+  color: #555;
+  padding-left: 0.8rem;
+  border-radius: 5px;
+}
+
+.checkbox-border,
+.radio-border {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.job-filter input {
+  margin-top: 0.8rem;
+}
+
+.job-filter label {
+  padding-left: 0.7rem;
+}
+
+.checkbox,
+.radio {
+  display: flex;
+  align-items: center;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: 0.8rem;
+  accent-color: red;
+}
+
+.sort-button {
+  text-align: end;
+  padding: 1.5rem 1.5rem 1.5rem 0rem;
+  border-top: 2px solid #c0c0c0;
+}
+
+/* ------------------------------------------- JOB SECTION ------------------------------------------- */
+
+.job-listing-header {
+  border: 2px solid #c0c0c0;
+  margin-top: 3rem;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location-search svg,
+.search-border svg {
+  max-width: 3rem;
+}
+
+.search-border,
+.location-search {
+  font-size: 1.3rem;
+  display: flex;
+  width: 40rem;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.location-search {
+  padding-left: 2rem;
+  border-left: 2px solid #c0c0c0;
+}
+
+.location-border {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.find-jobs-button button {
+  background-color: red;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  border: 2px solid red;
+  margin-right: -2rem;
+}
+
+.total-result {
+  margin: 2rem 0 2rem 0;
+}
+
+.total-result h3 {
+  font-size: 1.6rem;
+}
+
+.job-result-border {
+  border: 2px solid #c0c0c0;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.company-detail {
+  display: flex;
+}
+
+.company-icon {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.company-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.company-detail-header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.company-job-location,
+.company-name-status-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 86rem;
+  padding: 1rem 2rem 1rem 2rem;
+  color: black;
+  font-weight: 800;
+}
+
+.company-name-status-time h1 {
+  color: #c0c0c0;
+}
+
+.company-location {
+  max-width: 30rem;
+}
+
+.status,
+.urgent,
+.pay,
+.responsive {
+  display: inline;
+  font-family: sans-serif;
+  margin-left: 2rem;
+  border-radius: 5px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.status {
+  background-color: #ffdb99;
+  color: orange;
+}
+
+.urgent {
+  background-color: #ff9999;
+  color: red;
+}
+
+.responsive {
+  background-color: #66b366;
+  color: green;
+}
+
+.job-detail {
+  margin: 3rem 1rem 1rem 1rem;
+}
+
+.job-detail li {
+  list-style-type: disc;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3.6rem;
+  margin-top: 3.6rem;
+}
+
+.page {
+  font-size: 2.4rem;
+  padding: 0.7rem 1.4rem;
+  border: 0.3rem solid #999;
+  border-radius: 10px;
+}
+
+/* ******************* */
+/* TESTIMONIAL SECTION */
+/* ******************* */
+
+.section-testimonial {
+  margin-bottom: 9.6rem;
+  padding: 9.6rem 0;
+  background-color: #e6e6e6;
+}
+
+.testimonial-box {
+  padding: 2.4rem;
+  border: 2.4rem 4.8rem 2.4rem 4.8rem;
+  box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  position: relative;
+  padding-top: 6.4rem;
+  background-color: white;
+}
+
+.testimonial-line {
+  display: inline-block;
+  width: 8rem;
+  height: 2rem;
+  border-top: 0.6rem solid #ff9999;
+  margin-bottom: 6.4rem;
+}
+
+.testimonial-img-box {
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.8rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.6rem solid #e6e6e6;
+}
+
+.testimonial-img {
+  width: 100%;
+}
+
+.testimonial-name {
+  font-size: 2rem;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.testimonial-role {
+  font-size: 1.2rem;
+  color: #999;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+.testimonial-icon {
+  margin-bottom: 4.8rem;
+}
+
+.testimonial-description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #777;
+}
+
+/* ************** */
+/* FOOTER SECTION */
+/* ************** */
+
+.section-footer {
+  background-color: #e6e6e6;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  align-items: flex-start;
+  gap: 3.6rem;
+}
+
+.footer-icon {
+  width: 20rem;
+  height: 20rem;
+  align-self: flex-end;
+  justify-self: center;
+}
+
+.footer-img {
+  width: 100%;
+  align-self: center;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.footer-box li {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  gap: 1.4rem;
+}
+
+.footer-box li a {
+  color: #555;
+}
+
+.copyright-border {
+  display: inline-block;
+  padding: 2.4rem 0;
+  width: 120rem;
+  margin: 0 auto;
+  border-bottom: 0.4rem solid #ff9999;
+  margin-bottom: 2.4rem;
+}
+
+.copyright-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  word-spacing: 0.8rem;
+}
+
+.copyright-text span {
+  color: #ff9999;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* **************************** */
+/* **************************** */
+/* **************************** */
+/* JOB DESCRIPTION HTML SECTION */
+/* **************************** */
+/* **************************** */
+/* **************************** */
+
+/* *********** */
+/* JOB SECTION */
+/* *********** */
+
+.jobDesc-nav {
+  box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.75);
+  margin-bottom: 4.8rem;
+}
