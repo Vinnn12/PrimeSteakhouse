@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT AWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FONT AWESOME CDN -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="CSS/General.css" />
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <!-- CSS Links -->
+
+    <title>WIL Portal</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION STARTS -->
+    <header class="header-section">
+      <div class="header">
+        <div class="logo-border">
+          <a href="Index.html">
+            <img src="Images/Murdoch_Logo.png" alt="Murdoch Logo" />
+          </a>
+        </div>
+        <nav class="nav-border">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#job-opportunity">Opportunity</a></li>
+            <li><a href="Testimonial.html">Testimonial</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="Login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER SECTION ENDS -->
+
+    <!-- HERO SECTION STARTS -->
+    <section class="hero-section">
+      <div class="hero">
+        <div class="text-section">
+          <h1 class="heading-primary">Bringing Opportunity Closer to You</h1>
+          <h3 class="heading-third">
+            At Murdoch University's WIL portal, we provide students and
+            employers from different businesses, industries, government and
+            community organisations with the Work Integrated Learning (WIL)
+            opportunity
+            <br />
+            to work together to develop their future together.
+          </h3>
+          <div class="main-link-border">
+            <div class="primary-box">
+              <a class="primary-button cta-button" href="#">Sign Up</a>
+            </div>
+            <div class="secondary-box">
+              <a class="secondary-button cta-button" href="#">Login</a>
+            </div>
+          </div>
+        </div>
+        <div class="image-section">
+          <img src="Images/Main_Image.png" alt="Main Images" />
+        </div>
+      </div>
+    </section>
+    <!-- HERO SECTION ENDS -->
+
+    <section class="job-section" id="job-opportunity">
+      <div class="job">
+        <div class="job-filter">
+          <div class="job-filter-heading">
+            <h3>Filter</h3>
+            <h3 class="clear-button">Clear All</h3>
+          </div>
+
+          <!--------------------------------------------- JOB DATE SECTION --------------------------------------------->
+          <div class="job-filter-date">
+            <h3>Date Post</h3>
+            <select name="Date" id="Date">
+              <option value="Anytime">Anytime</option>
+              <option value="Day">1 Day</option>
+              <option value="Week">1 Week</option>
+              <option value="Month">1 Month</option>
+              <option value="Year">1 Year</option>
+            </select>
+          </div>
+          <!--------------------------------------------- JOB DATE SECTION --------------------------------------------->
+
+          <!--------------------------------------------- JOB TYPE SECTION --------------------------------------------->
+          <div class="job-filter-type">
+            <h3>Job Type</h3>
+            <div class="checkbox-border">
+              <div class="checkbox-row">
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="full-time"
+                    name="full-time"
+                    value="full-time"
+                  />
+                  <label for="full-time">Full-time</label>
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="full-time"
+                    name="full-time"
+                    value="full-time"
+                  />
+                  <label for="full-time">Part-time</label>
+                </div>
+              </div>
+              <div class="checkbox-row">
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="internship"
+                    name="internship"
+                    value="internship"
+                  />
+                  <label for="internship">Internship</label>
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="freelance"
+                    name="freelance"
+                    value="freelance"
+                  />
+                  <label for="freelance">Freelance</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------------------------------------- JOB TYPE SECTION --------------------------------------------->
+
+          <!--------------------------------------------- SALARY SECTION --------------------------------------------->
+          <div class="job-filter-salary">
+            <h3>Job Salary</h3>
+            <div class="radio-border">
+              <div class="radio-row">
+                <div class="radio">
+                  <input
+                    type="radio"
+                    id="under1000"
+                    name="under1000"
+                    value="under1000"
+                  />
+                  <label for="under1000">Under $1000</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" id="2500" name="2500" value="2500" />
+                  <label for="2500">$1000 - $2500</label>
+                </div>
+              </div>
+              <div class="radio-row">
+                <div class="radio">
+                  <input type="radio" id="5000" name="5000" value="5000" />
+                  <label for="5000">$2501 - $5000</label>
+                </div>
+                <div class="radio">
+                  <input
+                    type="radio"
+                    id="above5000"
+                    name="above5000"
+                    value="above5000"
+                  />
+                  <label for="above5000">Above $5000</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------------------------------------- SALARY SECTION --------------------------------------------->
+
+          <!--------------------------------------------- JOB WORKING SECTION --------------------------------------------->
+          <div class="job-filter-working">
+            <h3>On site / Remote</h3>
+            <div class="checkbox-border">
+              <div class="checkbox-row">
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="onsite"
+                    name="onsite"
+                    value="onsite"
+                  />
+                  <label for="onsite">On-Site</label>
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="remote"
+                    name="remote"
+                    value="remote"
+                  />
+                  <label for="remote">Remote</label>
+                </div>
+              </div>
+              <div class="checkbox-row">
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="hybrid"
+                    name="hybrid"
+                    value="hybrid"
+                  />
+                  <label for="hybrid">Hybrid</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------------------------------------- JOB WORKING SECTION --------------------------------------------->
+
+          <!--------------------------------------------- JOB FUNCTION SECTION --------------------------------------------->
+          <div class="job-filter-function">
+            <h3>Job Function</h3>
+            <div class="checkbox-border">
+              <div class="checkbox-row">
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="publicrelation"
+                    name="publicrelation"
+                    value="publicrelation"
+                  />
+                  <label for="publicrelation">Public Relation</label>
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="technology"
+                    name="technology"
+                    value="technology"
+                  />
+                  <label for="technology">Technology</label>
+                </div>
+              </div>
+              <div class="checkbox-row">
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="finance"
+                    name="finance"
+                    value="finance"
+                  />
+                  <label for="finance">Finance</label>
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="accounting"
+                    name="accounting"
+                    value="accounting"
+                  />
+                  <label for="accounting">Accounting</label>
+                </div>
+              </div>
+              <div class="checkbox-row">
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="hospitality"
+                    name="hospitality"
+                    value="hospitality"
+                  />
+                  <label for="hospitality">Hospitality</label>
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="tourism"
+                    name="tourism"
+                    value="tourism"
+                  />
+                  <label for="tourism">Tourism</label>
+                </div>
+              </div>
+              <div class="checkbox-row">
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="supplychain"
+                    name="supplychain"
+                    value="supplychain"
+                  />
+                  <label for="supplychain">Supply Chain</label>
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="management"
+                    name="management"
+                    value="management"
+                  />
+                  <label for="management">Management</label>
+                </div>
+              </div>
+              <div class="checkbox-row">
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="marketing"
+                    name="marketing"
+                    value="marketing"
+                  />
+                  <label for="marketing">Marketing</label>
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="engineering"
+                    name="engineering"
+                    value="engineering"
+                  />
+                  <label for="engineering">Engineering</label>
+                </div>
+              </div>
+              <div class="checkbox-row">
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="checmical"
+                    name="checmical"
+                    value="checmical"
+                  />
+                  <label for="fintech">Checmical</label>
+                </div>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="others"
+                    name="others"
+                    value="others"
+                  />
+                  <label for="others">Others</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------------------------------------- JOB FUNCTION SECTION --------------------------------------------->
+
+          <!--------------------------------------------- SORT BUTTON ------------------------------------------------>
+          <div class="sort-button">
+            <h3>Sort</h3>
+          </div>
+        </div>
+        <div class="job-listing">
+          <div class="job-listing-header">
+            <div class="search-border">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+
+              <p>Search job title or keyword...</p>
+            </div>
+            <div class="location-border">
+              <div class="location-search">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                  />
+                </svg>
+                <p>Country or timezone...</p>
+              </div>
+              <div class="find-jobs-button">
+                <button>Find jobs</button>
+              </div>
+            </div>
+          </div>
+          <div class="total-result">
+            <h3>250 Jobs Result</h3>
+          </div>
+          <a href="JobDescription.html">
+            <div class="job-result-border">
+              <div class="company-detail">
+                <div class="company-icon">
+                  <img src="Images/Twitter_Logo.png" alt="Twitter Logo" />
+                </div>
+                <div class="company-detail-header">
+                  <div class="company-job-location">
+                    <div class="company-job">
+                      <h1>Product Designer</h1>
+                    </div>
+                    <div class="company-location">
+                      <h1>Marina East, Singapore</h1>
+                    </div>
+                  </div>
+                  <div class="company-name-status-time">
+                    <h1>
+                      Twitter
+                      <pre class="status">Full-Time</pre>
+                      <pre class="urgent">Urgently-Hiring</pre>
+                      <pre class="pay">$4800 - $5200</pre>
+                    </h1>
+                    <h1>Posted 2 mins ago</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="job-detail">
+                <ul>
+                  <li>
+                    Within this role, you will be creating content for a wide
+                    range of local and international clients
+                  </li>
+                  <li>
+                    This role is suited to Bali based creatives looking to
+                    work-in-house
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </a>
+          <div class="job-result-border">
+            <div class="company-detail">
+              <div class="company-icon">
+                <img src="Images/jolibee.png" alt="Jolibee Logo" />
+              </div>
+              <div class="company-detail-header">
+                <div class="company-job-location">
+                  <div class="company-job">
+                    <h1>Manager</h1>
+                  </div>
+                  <div class="company-location">
+                    <h1>Bugis, Singapore</h1>
+                  </div>
+                </div>
+                <div class="company-name-status-time">
+                  <h1>
+                    Twitter
+                    <pre class="status">Full-Time</pre>
+                    <pre class="urgent">Urgently-Hiring</pre>
+                    <pre class="pay">$3000 - $4000</pre>
+                  </h1>
+                  <h1>Posted 10 days ago</h1>
+                </div>
+              </div>
+            </div>
+            <div class="job-detail">
+              <ul>
+                <li>
+                  Within this role, you will be creating content for a wide
+                  range of local and international clients
+                </li>
+                <li>
+                  This role is suited to Bali based creatives looking to
+                  work-in-house
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="job-result-border">
+            <div class="company-detail">
+              <div class="company-icon">
+                <img src="Images/FoodPanda.png" alt="Twitter Logo" />
+              </div>
+              <div class="company-detail-header">
+                <div class="company-job-location">
+                  <div class="company-job">
+                    <h1>Delivery man</h1>
+                  </div>
+                  <div class="company-location">
+                    <h1>Bukit Panjang, Singapore</h1>
+                  </div>
+                </div>
+                <div class="company-name-status-time">
+                  <h1>
+                    Twitter
+                    <pre class="status">Full-Time</pre>
+                    <pre class="responsive">Responsive Hirer</pre>
+                    <pre class="pay">$4000 - $6500</pre>
+                  </h1>
+                  <h1>Posted 15 days ago</h1>
+                </div>
+              </div>
+            </div>
+            <div class="job-detail">
+              <ul>
+                <li>
+                  Within this role, you will be creating content for a wide
+                  range of local and international clients
+                </li>
+                <li>
+                  This role is suited to Bali based creatives looking to
+                  work-in-house
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="job-result-border">
+            <div class="company-detail">
+              <div class="company-icon">
+                <img src="Images/Grab_Logo.png" alt="Twitter Logo" />
+              </div>
+              <div class="company-detail-header">
+                <div class="company-job-location">
+                  <div class="company-job">
+                    <h1>Content Creator</h1>
+                  </div>
+                  <div class="company-location">
+                    <h1>Tampines North, Singapore</h1>
+                  </div>
+                </div>
+                <div class="company-name-status-time">
+                  <h1>
+                    Twitter
+                    <pre class="status">Full-Time</pre>
+                    <pre class="pay">$2500 - $3000</pre>
+                  </h1>
+                  <h1>Posted 2 months ago</h1>
+                </div>
+              </div>
+            </div>
+            <div class="job-detail">
+              <ul>
+                <li>
+                  Within this role, you will be creating content for a wide
+                  range of local and international clients
+                </li>
+                <li>
+                  This role is suited to Bali based creatives looking to
+                  work-in-house
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="job-result-border">
+            <div class="company-detail">
+              <div class="company-icon">
+                <img src="Images/McdLogo.jpg" alt="Twitter Logo" />
+              </div>
+              <div class="company-detail-header">
+                <div class="company-job-location">
+                  <div class="company-job">
+                    <h1>Chef</h1>
+                  </div>
+                  <div class="company-location">
+                    <h1>Tampines East, Singapore</h1>
+                  </div>
+                </div>
+                <div class="company-name-status-time">
+                  <h1>
+                    Twitter
+                    <pre class="status">Full-Time</pre>
+                    <pre class="urgent">Urgently-Hiring</pre>
+                    <pre class="responsive">Responsive Hirer</pre>
+                  </h1>
+                  <h1>Posted 2 months ago</h1>
+                </div>
+              </div>
+            </div>
+            <div class="job-detail">
+              <ul>
+                <li>
+                  Within this role, you will be creating content for a wide
+                  range of local and international clients
+                </li>
+                <li>
+                  This role is suited to Bali based creatives looking to
+                  work-in-house
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pagination">
+            <div class="page-box text-center">
+              <span class="page">
+                <ion-icon
+                  name="chevron-back-outline"
+                  class="icon-link"
+                ></ion-icon>
+              </span>
+            </div>
+            <div class="page-box">
+              <span class="page">1</span>
+            </div>
+            <div class="page-box">
+              <span class="page">2</span>
+            </div>
+            <div class="page-box">
+              <span class="page">3</span>
+            </div>
+            <div class="page-box">
+              <span class="page">4</span>
+            </div>
+            <div class="page-box">
+              <span class="page">5</span>
+            </div>
+            <div class="page-box">
+              <span class="page">
+                <ion-icon
+                  name="chevron-forward-outline"
+                  class="icon-link"
+                ></ion-icon>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-testimonial">
+      <div class="container text-center">
+        <span class="sub-heading">Testimonial</span>
+        <h2 class="heading-secondary">What Our Clients' Say About Us</h2>
+        <span class="testimonial-line"></span>
+      </div>
+
+      <div class="container grid grid--3-cols text-center">
+        <div class="testimonial-box">
+          <div class="testimonial-img-box">
+            <img
+              src="Images/36.jpg"
+              class="testimonial-img"
+              alt="People's Face"
+            />
+          </div>
+          <div class="testimonial-name">Alvin Edward</div>
+          <div class="testimonial-role">Product Manager at FoodPanda</div>
+          <div class="testimonial-icon">
+            <ion-icon
+              name="checkmark-done-outline"
+              class="link-icon"
+            ></ion-icon>
+          </div>
+          <div class="testimonial-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ab
+            reprehenderit laudantium sint minus! Saepe sunt aliquam quidem atque
+            sint vero, optio corporis, quis, incidunt animi repellat pariatur
+            maiores quos.
+          </div>
+        </div>
+        <div class="testimonial-box">
+          <div class="testimonial-img-box">
+            <img
+              src="Images/79.jpg"
+              class="testimonial-img"
+              alt="People's Face"
+            />
+          </div>
+          <div class="testimonial-name">Fiorenza Faustine</div>
+          <div class="testimonial-role">Content Creator at Grab</div>
+          <div class="testimonial-icon">
+            <ion-icon
+              name="checkmark-done-outline"
+              class="link-icon"
+            ></ion-icon>
+          </div>
+          <div class="testimonial-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ab
+            reprehenderit laudantium sint minus! Saepe sunt aliquam quidem atque
+            sint vero, optio corporis, quis, incidunt animi repellat pariatur
+            maiores quos.
+          </div>
+        </div>
+        <div class="testimonial-box">
+          <div class="testimonial-img-box">
+            <img
+              src="Images/52.jpg"
+              class="testimonial-img"
+              alt="People's Face"
+            />
+          </div>
+          <div class="testimonial-name">Vedricko Angkasa</div>
+          <div class="testimonial-role">Lead Director at PWC</div>
+          <div class="testimonial-icon">
+            <ion-icon
+              name="checkmark-done-outline"
+              class="link-icon"
+            ></ion-icon>
+          </div>
+          <div class="testimonial-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ab
+            reprehenderit laudantium sint minus! Saepe sunt aliquam quidem atque
+            sint vero, optio corporis, quis, incidunt animi repellat pariatur
+            maiores quos.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="secti on-footer">
+      <div class="footer container">
+        <div class="footer-icon">
+          <img src="Images/WIL_Logo.png" class="footer-img" alt="WIL Logo" />
+        </div>
+        <div class="footer-box">
+          <div class="sub-heading footer-header">Navigation</div>
+          <ul>
+            <li>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <a href="#">Opportunity</a>
+            </li>
+            <li>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <a href="#">Testimonial</a>
+            </li>
+            <li>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <a href="#">Register</a>
+            </li>
+            <li>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <a href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <div class="sub-heading">Social</div>
+          <ul>
+            <li>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <a href="#">
+                <ion-icon name="logo-instagram" class="icon-link"></ion-icon>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <a href="#">
+                <ion-icon name="logo-linkedin" class="icon-link"></ion-icon>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <a href="#">
+                <ion-icon name="logo-twitter" class="icon-link"></ion-icon>
+                Twitter
+              </a>
+            </li>
+            <li>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <a href="#">
+                <ion-icon name="logo-youtube" class="icon-link"></ion-icon>
+                YouTube
+              </a>
+            </li>
+            <li>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <a href="#">
+                <ion-icon name="logo-github" class="icon-link"></ion-icon>
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <div class="sub-heading">Contact</div>
+          <ul>
+            <li>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <a href="#">
+                <ion-icon name="mail-outline" class="icon-link"></ion-icon>
+                Email
+              </a>
+            </li>
+            <li>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <a href="#">
+                <ion-icon name="call-outline" class="icon-link"></ion-icon>
+                Tel
+              </a>
+            </li>
+            <li>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+              <a href="#">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                Whatsapp
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <span class="copyright-border"></span>
+        <p class="copyright-text text-center">
+          Created by
+          <span>Alvin Edward</span>
+          | Copyright &#169; 2023
+        </p>
+      </div>
+    </footer>
+
+    <script src="Script.js"></script>
+  </body>
+</html>
